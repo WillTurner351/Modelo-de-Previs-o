@@ -1,0 +1,26 @@
+{
+  "nome": "Modelo de Previsão de Vendas",
+  "descricao": "Um modelo de previsão simples para prever vendas futuras com base em dados históricos.",
+  "versao": "1.0",
+  "pontos_extremidade": {
+    "treinamento": "http://api.example.com/train",
+    "previsao": "http://api.example.com/predict",
+    "avaliacao": "http://api.example.com/evaluate"
+  },
+  "parametros": {
+    "algoritmo": "Regressão Linear",
+    "features": ["tempo", "preço", "promoção"],
+    "target": "vendas",
+    "hyperparametros": {
+      "regularization": 0.01,
+      "learning_rate": 0.001,
+      "epochs": 100
+    }
+  },
+  "exemplo_dados": {
+    "data_inicio": "2020-01-01",
+    "data_fim": "2023-12-31",
+    "num_amostras": 10000,
+    "num_features": 3
+  }
+}
